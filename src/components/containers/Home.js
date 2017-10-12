@@ -29,6 +29,7 @@ class Home extends Component {
       .register(this.state.profile)
       .then(() => {
         this.props.history.push('/admin');
+        return null;
       })
       .catch(err => {
         alert(`ERROR: ${err}`);

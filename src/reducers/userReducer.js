@@ -23,6 +23,10 @@ export default (state = initialState, action) => {
       newState['all'] = array;
       return newState;
 
+    case constants.CURRENT_USER_UPDATED:
+      console.log(action.data);
+      return newState;
+
     default:
       return state;
   }

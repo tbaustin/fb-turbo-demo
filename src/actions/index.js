@@ -32,5 +32,11 @@ export default {
     return dispatch => {
       return dispatch(TurboClient.currentUser(constants.CURRENT_USER_RECEIVED));
     };
+  },
+
+  updateCurrentUser: (currentUser, params) => {
+    return dispatch => {
+      return dispatch(TurboClient.updateCurrentUser(currentUser, params, constants.CURRENT_USER_UPDATED));
+    };
   }
 };
